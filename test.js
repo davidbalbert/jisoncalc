@@ -8,3 +8,6 @@ console.log(eqn + " = " + parser.parse(eqn))
 
 eqn = "-5 + 2"
 console.log(eqn + " = " + parser.parse(eqn))
+
+eqn = "2 * (5 + 5)"
+console.log(eqn + " = " + parser.parse(eqn))

@@ -6,6 +6,8 @@
 "-"                         { return '-'; }
 "*"                         { return '*'; }
 "/"                         { return '/'; }
+"("                         { return '('; }
+")"                         { return ')'; }
 .                           { print_error(yytext); }
 
 %%
