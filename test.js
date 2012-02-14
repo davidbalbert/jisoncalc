@@ -1,50 +1,32 @@
 parser = require('./parser')
 
-eqn = "5 + 5 + 5 - 2"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
+calc_eval = function(eqn) {
+  console.log(">> " + eqn);
+  console.log("=> " + parser.parse(eqn));
 
-console.log();
+  console.log();
+}
+
+eqn = "5 + 5 + 5 - 2"
+calc_eval(eqn);
 
 eqn = "1 - 5 * 4 / 2 + 1"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
 
 eqn = "-5 + 2"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
 
 eqn = "2 * (5 + 5)"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
-
+calc_eval(eqn);
 
 eqn = "foo = 5 + 5"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
 
 eqn = "foo"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
 
 eqn = "bar = foo + 1"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
 
 eqn = "bar"
-console.log(">> " + eqn);
-console.log("=> " + parser.parse(eqn));
-
-console.log();
+calc_eval(eqn);
