@@ -1,7 +1,7 @@
 jisoncalc
 =========
 
-A simple calculator using Jison. It has a repl.
+A simple calculator using Jison. It has math, grouping, exponents, PI, e, variables, and a repl.
 
 ##Using
 
@@ -17,4 +17,4 @@ $ node calc.js
 => 23
 ```
 
-For more on what it can do, see test.js
+For more on what it can do, see test.js. For now, all variables default to 0.

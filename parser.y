@@ -24,7 +24,7 @@ expression
     | '(' expression ')'              { $$ = $2; }
     | SYMBOL '=' expression           { $$ = symbols[$1] = $3; }
     | NUMBER                          { $$ = Number(yytext); }
-    | SYMBOL                          { $$ = symbols[$1]; }
+    | SYMBOL                          { $$ = symbols[$1] || 0; }
     | PI                              { $$ = Math.PI; }
     | E                               { $$ = Math.E; }
     ;
