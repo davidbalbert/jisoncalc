@@ -1,16 +1,20 @@
 jisoncalc
 =========
 
-A simple calculator using Jison.
+A simple calculator using Jison. It has a repl.
 
-#Using
+##Using
+
 ```
 $ npm -g install jison
 $ jison parser.y lexer.l
-$ node
+$ node calc.js
+>> 5 + 5
+=> 10
+>> foo = 10 * 2
+=> 20
+>> bar = foo + 3
+=> 23
 ```
 
-```javascript
-> parser = require('./parser')
-> parser.parse("5 + 5");
-```
+For more on what it can do, see test.js
