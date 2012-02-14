@@ -5,6 +5,7 @@
 %right '='
 %left '+' '-'
 %left '*' '/'
+%right '^'
 %left UMINUS
 
 %%
@@ -18,6 +19,7 @@ expression
     | expression '-' expression       { $$ = $1 - $3; }
     | expression '*' expression       { $$ = $1 * $3; }
     | expression '/' expression       { $$ = $1 / $3; }
+    | expression '^' expression       { $$ = Math.pow($1, $3); }
     | '-' expression %prec UMINUS     { $$ = - $2; }
     | '(' expression ')'              { $$ = $2; }
     | SYMBOL '=' expression           { $$ = symbols[$1] = $3; }

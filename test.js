@@ -7,26 +7,35 @@ calc_eval = function(eqn) {
   console.log();
 }
 
-eqn = "5 + 5 + 5 - 2"
+eqn = "5 + 5 + 5 - 2";
 calc_eval(eqn);
 
-eqn = "1 - 5 * 4 / 2 + 1"
+eqn = "1 - 5 * 4 / 2 + 1";
 calc_eval(eqn);
 
-eqn = "-5 + 2"
+eqn = "-5 + 2";
 calc_eval(eqn);
 
-eqn = "2 * (5 + 5)"
+eqn = "2 * (5 + 5)";
 calc_eval(eqn);
 
-eqn = "foo = 5 + 5"
+eqn = "foo = 5 + 5";
 calc_eval(eqn);
 
-eqn = "foo"
+eqn = "foo";
 calc_eval(eqn);
 
-eqn = "hello_there1 = foo + 1"
+eqn = "hello_there1 = foo + 1";
 calc_eval(eqn);
 
-eqn = "hello_there1"
+eqn = "hello_there1";
+calc_eval(eqn);
+
+eqn = "2^3";
+calc_eval(eqn);
+
+eqn = "2^3^4";
+calc_eval(eqn);
+
+eqn = "2^foo";
 calc_eval(eqn);

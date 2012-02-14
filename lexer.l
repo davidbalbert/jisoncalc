@@ -3,7 +3,7 @@
 \s+                         { /* eat up whitespace */ }
 ([1-9][0-9]+|[0-9])         { return 'NUMBER'; }
 [a-zA-Z_][a-zA-Z_\d]*       { return 'SYMBOL'; }
-[-+*/()=]                   { return yytext; }
+[-+*/()=^]                  { return yytext; }
 .                           { print_error(yytext); }
 
 %%
