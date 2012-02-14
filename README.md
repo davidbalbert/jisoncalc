@@ -1,7 +1,7 @@
 jisoncalc
 =========
 
-A simple calculator using Jison. Only does addition :).
+A simple calculator using Jison.
 
 #Using
 ```

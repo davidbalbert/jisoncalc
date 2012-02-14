@@ -1,8 +1,11 @@
 %%
 
 \s+                         { /* eat up whitespace */ }
-([0-9]|[1-9][0-9]+)         { return 'NUMBER'; }
+([1-9][0-9]+|[0-9])         { return 'NUMBER'; }
 "+"                         { return '+'; }
+"-"                         { return '-'; }
+"*"                         { return '*'; }
+"/"                         { return '/'; }
 .                           { print_error(yytext); }
 
 %%
