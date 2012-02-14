@@ -43,5 +43,5 @@ calc_eval(eqn);
 eqn = "PI";
 calc_eval(eqn);
 
-eqn = "e ^ 2"
+eqn = "e ^ 2";
 calc_eval(eqn);
