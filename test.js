@@ -45,3 +45,7 @@ calc_eval(eqn);
 
 eqn = "e ^ 2";
 calc_eval(eqn);
+
+eqn = "2.3 + 3.2e2";
+calc_eval(eqn);
+
