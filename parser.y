@@ -25,6 +25,8 @@ expression
     | SYMBOL '=' expression           { $$ = symbols[$1] = $3; }
     | NUMBER                          { $$ = Number(yytext); }
     | SYMBOL                          { $$ = symbols[$1]; }
+    | PI                              { $$ = Math.PI; }
+    | E                               { $$ = Math.E; }
     ;
 
 %%
