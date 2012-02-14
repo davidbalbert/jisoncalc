@@ -25,8 +25,8 @@ calc_eval(eqn);
 eqn = "foo"
 calc_eval(eqn);
 
-eqn = "bar = foo + 1"
+eqn = "hello_there1 = foo + 1"
 calc_eval(eqn);
 
-eqn = "bar"
+eqn = "hello_there1"
 calc_eval(eqn);
