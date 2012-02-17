@@ -19,6 +19,6 @@ $ node calc.js
 
 For more on what it can do, see test.js. For now, all variables default to 0.
 
-License
+##License
 
 jisoncalc is licensed under the terms of the [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html).
