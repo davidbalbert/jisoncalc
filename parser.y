@@ -23,7 +23,7 @@ expression
     | '-' expression %prec UMINUS     { $$ = - $2; }
     | '(' expression ')'              { $$ = $2; }
     | SYMBOL '=' expression           { $$ = symbols[$1] = $3; }
-    | NUMBER                          { $$ = Number(yytext); }
+    | NUMBER                          { $$ = Number($1); }
     | SYMBOL                          { $$ = symbols[$1] || 0; }
     | PI                              { $$ = Math.PI; }
     | E                               { $$ = Math.E; }
